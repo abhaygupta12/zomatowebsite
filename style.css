@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    padding:0;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+nav
+{
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    position: relative;
+    
+}
+nav ul li
+{
+    display: inline-block;
+    margin: 0px 15px;
+   
+}
+nav ul li a
+{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+nav ul
+{
+    margin: 0px;
+}
+
+.checkbtn
+{
+    color: black;
+    font-size: 25px;
+
+    right: 20px;
+    display: none;
+}
+#check
+{
+    display: none;
+}
+#section1
+{
+    background-image: url("img/2.jpg");
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+/*#section1 h1 
+{
+    font-family: 'Poppins', sans-serif;
+   font-size: 80px;
+
+   
+}
+#section1 p
+{
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 10px 0px;
+   
+}*/
+.overlay
+{
+    background-color: rgba(0, 0, 0, 0.452);
+    height:calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+#section1 h1
+{
+    padding-top:300px;
+    font-size:80px;
+    color: white;
+
+}
+#section1 p
+{
+    font-size: 20px;
+    color:white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+#section1 select {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border: none;
+    font-size: 18px;
+    border-right: 3px solid black;
+}
+#section1 .icon {
+    font-size: 17px;
+    color: rgb(199, 199, 199);
+    padding-left: 20px;
+}
+#section1 input {
+    padding: 10px;
+    width: 400px;
+    border: none;
+    border: none;
+}
+
+#section1 div
+{
+    color: white;
+    padding:85px 250px;
+    
+}
+
+
+#section3
+{
+    padding-top: 30px;
+   
+    
+}
+
+#section3 .box img
+{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px 20px 0px 0px;
+}
+#section3 .box p{
+    text-align: center;
+}
+#section3 .box p a
+{
+    font-size: 20px;
+    font-weight: 400;   
+    text-decoration: none;
+    color:black;
+}
+#section3 .box
+{
+   box-shadow: 0px 0px 10px 2px rgb(206, 206, 206);
+    padding-bottom: 30px;
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+#section3 h2
+{
+   font-size: 30px;
+}
+#section3 p
+{
+    font-size: 20px;
+}
+#section3 .box:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.checkbtn
+{
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    right: 30px;
+    display: none;   
+
+}
+#check
+{
+    display: none;   
+}
+@media only screen and (max-width: 420px)
+{
+    .checkbtn
+    {
+        display: block;   
+    }
+    nav ul
+    {
+        position: fixed;
+        top: 82px;
+        background-color:white;
+        width: 50%;
+        height: 100vh;
+        left:-100%;
+        transition: all 3s;
+    }
+    nav ul li 
+    {
+        display: block;
+        margin: 20px 20px;
+    }
+    #check:checked ~ul
+    {
+          left: 0px;
+    }
+
+
+}
+
+
+
