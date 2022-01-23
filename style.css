@@ -186,6 +186,10 @@ nav ul
     {
         display: block;   
     }
+    nav
+    {
+        padding: 0px 20px;
+    }
     nav ul
     {
         position: fixed;
