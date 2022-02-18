@@ -42,30 +42,45 @@
     font-size: 20px;
     
 }
-#section2 .container
+#section1 .row
 {
-    display: flex;
-    justify-content: space-between;
+    padding: 0px 164px;
 }
+#section2
+{
+    padding:100px 0px;
+
+    
+}
+
 .btn{
     box-shadow: 0px 0px 9px 1px rgba(175, 175, 175, 0.466);
-    padding:20px;
+    padding:38px;
+    text-align: left;
 }
-.btn h2
+
+h2
 {
     font-size: 30px;
     font-weight: 500;
+    margin: 0px 0px;
 }
-.choice
+.map
 {
    
     padding-left:0px;
-    padding-top: 30px;
+    padding-bottom: 20px;
 }
+.choice
+{
+   padding-left: 25px;
+}
+
 .choice label
 {
     font-size: 20px;
 }
+
 .btn p
 {
     font-size: 20px;
@@ -82,6 +97,8 @@
 .btn1 img
 {
     border-radius: 10px 0px 0px 10px;
+    
+   
 }
 .btn1 h2
 {
@@ -89,10 +106,7 @@
     font-weight: 500;
     padding-top: 30px;
 }
-#section2
-{
-    padding:100px 0px;
-}
+
 .btn2
 {
     font-size: 20px;
@@ -115,6 +129,7 @@
 }
 .content
 {
+    margin-top:-23px ;
     padding:20px;
 }
 .price

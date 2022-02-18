@@ -8,12 +8,12 @@
 nav
 {
     height: 80px;
-    background-color: white;
+    background-color:white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 50px;
-    position: relative;
+   
     
 }
 nav ul li
@@ -33,6 +33,30 @@ nav ul
 {
     margin: 0px;
 }
+button{
+    padding: 10px 30px;
+    border: none;
+    color:brown;
+}
+.myDark
+{
+    background-color: black ;
+    color: white;
+}
+.myDark nav
+{
+     background-color: black;
+     color: white;
+}
+.myDark nav ul li a
+{
+    color: white;
+    
+}
+.myDark .brandimg
+{
+    filter: invert(1);
+}
 
 .checkbtn
 {
@@ -46,6 +70,7 @@ nav ul
 {
     display: none;
 }
+
 #section1
 {
     background-image: url("img/2.jpg");
@@ -73,18 +98,21 @@ nav ul
 }*/
 .overlay
 {
+   
     background-color: rgba(0, 0, 0, 0.452);
     height:calc(100vh - 80px);
     display: flex;
     flex-direction: column;
-    
+     
     align-items: center;
+   
 }
 #section1 h1
 {
-    padding-top:300px;
+    padding-top:280px;
     font-size:80px;
     color: white;
+    font-style: italic;
 
 }
 #section1 p
@@ -96,23 +124,40 @@ nav ul
     margin: 10px 0px;
 }
 #section1 select {
-    padding: 10px;
+    padding: 15px;
     width: 200px;
     border: none;
-    border: none;
     font-size: 18px;
-    border-right: 3px solid black;
+    border-right: 5px solid black;
+    outline: none;
+    
+   
+   
 }
 #section1 .icon {
-    font-size: 17px;
+    font-size:15px;
     color: rgb(199, 199, 199);
+    /* color: black; */
     padding-left: 20px;
+    background-color: white;
+    padding: 20px 5px;
+    
+   
+    
+   
+   
 }
 #section1 input {
-    padding: 10px;
+    padding:15px;
     width: 400px;
     border: none;
-    border: none;
+    color: black;
+    outline: none;
+    
+    
+   
+   
+   
 }
 
 #section1 div
@@ -138,6 +183,7 @@ nav ul
 }
 #section3 .box p{
     text-align: center;
+   
 }
 #section3 .box p a
 {
@@ -145,6 +191,7 @@ nav ul
     font-weight: 400;   
     text-decoration: none;
     color:black;
+    padding: 0px 0px;
 }
 #section3 .box
 {
@@ -165,6 +212,7 @@ nav ul
 #section3 .box:hover
 {
     transform: scale(1.1);
+    transition: all 2s;
     cursor: pointer;
 }
 .checkbtn
@@ -179,6 +227,44 @@ nav ul
 #check
 {
     display: none;   
+}
+#section4 .container
+{
+    display:flex;
+    
+     
+}
+#section4
+{
+    padding:50px 0px;
+    background-color: #FFFBF7;
+}
+#section4 h2
+{
+    font-size: 40px;
+    padding-top: 170px;
+}
+#section4 p
+{
+    font-size: 20px;
+    margin:10px 0px;
+}
+.col-lg-8
+{
+   padding-left: 70px;
+}
+/* #section4 input
+{
+    font-size: 20px;
+    width: 400px;
+    padding:10px;
+} */
+#section4 button{
+    padding:10px 30px;
+    font-size: 20px;
+    background-color: #E03546;
+    border:none;
+    color:white;
 }
 @media only screen and (max-width: 420px)
 {
@@ -209,9 +295,98 @@ nav ul
     {
           left: 0px;
     }
+    
 
 
 }
+/* model Section */
+
+.bg-model
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.473);
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+     display: none;
+    transition: display 1s;
+}
+.bg-model.active
+{
+    display: flex;
+}
 
 
-
+  
+ 
+ 
+  .login {
+    position: absolute;
+    padding: 50px 25px;
+    
+    background: white;
+    
+    border-radius: 10px;
+  }
+  
+  .header {
+    position: relative;
+  }
+  
+  .header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #343335;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #343335;
+  }
+  
+  .header i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    color: #343335;
+  }
+  
+  .body .form input {
+    display: block;
+    padding: 10px;
+    margin: 25px 10px;
+    outline: none;
+    border: solid #343335 1px;
+    color: #343335;
+    transition: 0.4s;
+  }
+  
+  .body .form input:focus {
+    border-color: #343335;
+  }
+  
+  .footer {
+    position: relative;
+    height: 40px;
+    width: 100%;
+  }
+  
+  .footer button {
+    position: absolute;
+    padding: 10px;
+    min-width: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #343335;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  .footer button:hover {
+    background: #343335;
+  }
+  
+  
+ 
