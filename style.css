@@ -16,6 +16,17 @@ nav
    
     
 }
+nav span
+{
+    color:black;
+    font-size: 40px;
+    font-weight: 700;
+}
+nav span a
+{
+    color:black;
+    text-decoration: none;
+}
 nav ul li
 {
     display: inline-block;
